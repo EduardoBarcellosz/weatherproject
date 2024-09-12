@@ -43,7 +43,7 @@ async function verificaTempo(city) {
     }
 }
 function reduzCloud(){
-    document.getElementById("climai").src="Cloudy.svg";
+    document.getElementById("climai").src="./assets/Cloudy.svg";
     document.getElementById("dentro").style="background:linear-gradient(#576770,#668FA7);";
     document.getElementById("fora").style="background:linear-gradient(#576770,#668FA7);";
 }
@@ -51,12 +51,12 @@ function reduzCloud(){
 function ceuImg(ceu){
     switch(ceu){
         case "Clear":
-            document.getElementById("climai").src="Sunday-Clear.svg";
+            document.getElementById("climai").src="./assets/Sunday-Clear.svg";
             document.getElementById("dentro").style="background:linear-gradient(#5EB8ED,#E3EDF3);";
             document.getElementById("fora").style="background:linear-gradient(#5EB8ED,#E3EDF3);";
             break;
         case "Rain":
-            document.getElementById("climai").src="RainDay.svg";
+            document.getElementById("climai").src="./assets/RainDay.svg";
             document.getElementById("dentro").style="background:linear-gradient(#0C5E8E,#6A7274);";
             document.getElementById("fora").style="background:linear-gradient(#0C5E8E,#6A7274);";
             break;
@@ -71,12 +71,12 @@ function ceuImg(ceu){
 function nightImg(night){
     switch(night){
         case "Clear":
-            document.getElementById("climai").src="MoonNight-Clear.svg";
+            document.getElementById("climai").src="./assets/MoonNight-Clear.svg";
             document.getElementById("dentro").style="background:linear-gradient(#06527E,#1D1B1B);";
             document.getElementById("fora").style="background:linear-gradient(#000304,#0C6AA0);";
             break;
         case "Rain":
-            document.getElementById("climai").src="RainNight.svg";
+            document.getElementById("climai").src="./assets/RainNight.svg";
             document.getElementById("dentro").style="background:linear-gradient(#082333,#060F38);";
             document.getElementById("fora").style="background:linear-gradient(#000304,#062436);";
             break;
