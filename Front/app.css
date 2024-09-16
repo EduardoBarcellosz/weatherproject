@@ -1,10 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
 body{
     height: 100vh;
     background: linear-gradient(#5EB8ED,#E3EDF3);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
+
+span{
+    margin: 0px;
+}
+
+.relogio{
+    margin-bottom: 40px;
+    font-size: 4rem;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+    display: flex;
+}
+
+.some{
+    opacity: 0;
+}
+
 .borda{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background: linear-gradient(#5EB8ED,#E3EDF3);
@@ -65,6 +86,11 @@ button:active{background-color: rgb(202, 191, 191);}
     margin-top: 60px;
     margin-bottom: 10px;
 }
+
+.image-display{
+    display: none;
+}
+
 span{
     font-weight: 400;
     text-align: center;
@@ -98,3 +124,4 @@ span{
     margin: 10px;
     gap: 5px;
 }
+
