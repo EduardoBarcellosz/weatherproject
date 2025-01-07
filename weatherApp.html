@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="weatherApp.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body id="out">
+    <div class="clock hide">
+        <span class="hours">10</span>
+        <span>:</span>
+        <span class="minutes">00</span>
+        <span>:</span>
+        <span class="seconds">00</span>
+    </div>
+    <section id="in" class="border">
+        <input type="text" id="input" class="search" placeholder="Name a City" set autocomplete="off">
+        <button id = "search-button" onclick="search()"><img src="../assets/search.svg"></button>
+        <img id="weather" class="image" src="../assets/Sunday-Clear.svg">
+        <br>
+        <span class="temp" id="temp"></span>
+        <br>
+        <span class="city" id="city"></span>
+        <br>
+        <div class="info-container">
+            <div class="info">
+                <img src="../assets/iconegota.svg" class="humidity">
+                <span class="windH" id="humidity"></span>
+            </div>
+            <div class="info">
+                <img src="../assets/Wind.svg" class="wind">
+                <span class="windH" id="wind"></span>
+            </div>
+        </div>
+    </section>
+    <script src="./weatherApp.js"></script>
+</body>
+</html>

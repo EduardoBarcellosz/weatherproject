@@ -2,37 +2,31 @@
 
 body{
     height: 100vh;
+    background: linear-gradient(#5EB8ED,#E3EDF3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    position: relative;
 }
 
 span{
     margin: 0px;
 }
-.loginButton{
-    position: absolute;
-    font-family: "Fredoka", sans-serif;
-    border-radius: 10px;
-    height: 40px;
-    z-index: 2;
-    margin-left: 1400px;
-    border: none;
-}
-.relogio{
+
+.clock{
     margin-bottom: 40px;
     font-size: 4rem;
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
     display: flex;
-    width: fit-content;
-    margin: 80px auto 0 auto; 
 }
 
-.some{
+.hide{
     opacity: 0;
 }
 
-.borda{
+.border{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background: linear-gradient(#5EB8ED,#E3EDF3);
     height: 445px;
@@ -40,7 +34,6 @@ span{
     border: 1mm;
     border-radius: 20px;
     text-align: center;
-    padding: 15px;
 }
 ::placeholder{
     opacity: 0.5;
@@ -50,13 +43,7 @@ input:focus::placeholder {
     color: transparent;
 }
 
-.header{
-    display: flex;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.pesquisa{
+.search{
     font-family: Fredoka;
     font-size: 25px;
     font-weight: 400;
@@ -64,6 +51,7 @@ input:focus::placeholder {
     text-overflow: hidden;
     width: 292px;
     height: 54px;
+    margin-top: 20px;
     border: none;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -71,7 +59,7 @@ input:focus::placeholder {
     background-color: #FFFFFF;
 }
 
-.vermelho{
+.red{
     background-color: red;
     color: white;
     opacity: 0.5;
@@ -86,13 +74,6 @@ button{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;
     transition: .3s;
-    position: relative;
-}
-
-button img{
-    position: absolute;
-    top: calc(50% - 12px);
-    right: calc(50% - 12px);
 }
 
 button:hover{
@@ -101,7 +82,7 @@ button:hover{
 
 button:active{background-color: rgb(202, 191, 191);}
 
-.imagem{ 
+.image{ 
     margin-top: 60px;
     margin-bottom: 10px;
 }
@@ -135,7 +116,6 @@ span{
     display: flex;
     width: fit-content;
     margin: 0 auto;
-    align-items: center;
 }
 
 .info{
@@ -143,88 +123,4 @@ span{
     align-items: center;
     margin: 10px;
     gap: 5px;
-}
-
-.info-container{
-    display: flex;
-    gap: 80px
-}
-
-.widget{
-    padding: 20px;
-    background-color: black;
-    /* display: grid; */
-    gap: 10px;
-    height: 520px;
-    width: 250px;
-    border-radius: 20px;
-    background-color: #cfd3d560;
-    box-sizing: border-box;
-    font-family: "Fredoka", sans-serif;
-    overflow-y: auto;
-}
-
-.widget::-webkit-scrollbar{
-    width: 15px;
-}
-
-.widget::-webkit-scrollbar-track{
-    background:#cfd3d580;
-    border-radius:0 20px 20px 0;
-}
-
-.widget::-webkit-scrollbar-thumb{
-    width: 5px;
-    background: #cfd3d590;
-    border-radius:0 20px 20px 0;
-} 
-
-.item-historico{
-    align-self: start;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-.clima{
-    width: 50px;
-    display: block;
-    margin: 0 auto;
-}
-
-.icone{
-    width: 25px;
-}
-
-.icone-txt{
-    font-size: 1rem;
-}
-
-.texto{
-    font-size: 1rem;
-}
-
-.temperatura{
-    font-size: 1.5rem;
-}
-
-.item-favorito{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    width: 100%;
-    align-self: start;
-    height: 80px;
-    color: white;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-.item-favorito:hover{
-    cursor:pointer;
 }
